@@ -1,0 +1,1268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>733</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TINFAR TEST</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../icon/icons8-workstation-94.png</normaloff>../icon/icons8-workstation-94.png</iconset>
+  </property>
+  <property name="toolTip">
+   <string>Tinfar test</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#btn_add_new:hover , #btn_add_cancel:hover , #btn_add_del:hoverl , #m_ip:hover , #m_port:hover , #m_i_1:hover , #m_i_2:hover , #m_i_3:hover , #m_i_4:hover , #m_i_5:hover , #btn_m_request:hover {
+border-radius:5px;
+background-color:#cccccc;
+height:31px;
+}
+#btn_add_new , #btn_add_cancel , #btn_add_del , #m_ip , #m_port , #m_i_1 , #m_i_2 , #m_i_3 , #m_i_4 , #m_i_5 {
+border-radius:5px;
+background-color:gray;
+height:31px;
+color:white;
+}
+
+
+#btn_m_start:hover , #btn_m_stop:hover , #btn_mouse_msg:hover , #btn_auto_click:hover , #btn_stop_click:hover , #btn_lds_i6_start:hover , #btn_lds_i6_timer_start:hover , #btn_lds_i6_timer_stop:hover , #btn_ft_i6_start:hover , #btn_ft_i6_timer_start:hover , #btn_ft_i6_timer_stop:hover , #btn_socket_client_send:hover , #btn_start_socket_server:hover , #btn_iaeris52_startLhover , #btn_iaeris52_timer_start:hover , #btn_iaeris52_timer_stop:hover , #btn_ddos_analysis_submit:hover , #ddos_anysisistics_edit:hover , #btn_reload_ddos_list:hover , #btn_library_sd_start:hover , #btn_library_sd_stop:hover , #library_monitor_per_sec:hover{
+border-radius:5px;
+background-color:gray;
+color:white;
+height:31px;
+}
+#btn_m_start , #btn_m_stop ,  #btn_mouse_msg , #btn_auto_click , #btn_stop_click , #btn_lds_i6_start , #btn_lds_i6_timer_start , #btn_lds_i6_timer_stop , #btn_ft_i6_start , #btn_ft_i6_timer_start , #btn_ft_i6_timer_stop , #btn_socket_client_send , #btn_start_socket_server , #btn_iaeris52_start , #btn_iaeris52_timer_start , #btn_iaeris52_timer_stop , #btn_ddos_analysis_submit , ddos_anysisistics_edit , #btn_reload_ddos_list , #btn_library_sd_start , #btn_library_sd_stop , #library_monitor_per_sec{
+border-radius:5px;
+background-color:white;
+height:31px;
+}
+
+#add_date , #add_kind , #add_money , #add_content , #add_kind_comboBox , #add_no{
+border-radius:5px;
+height:31px;
+}
+
+
+#centralwidget{
+border-radius:5px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="page_welcome">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="font">
+           <font>
+            <pointsize>48</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>TINFAR TEST</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_test_treewidgets">
+       <layout class="QVBoxLayout" name="verticalLayout_14">
+        <item>
+         <widget class="QGroupBox" name="groupBox_17">
+          <property name="title">
+           <string>GroupBox</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_15">
+           <item>
+            <widget class="QTreeWidget" name="test_treeWidget">
+             <column>
+              <property name="text">
+               <string notr="true">1</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_library_sd">
+       <layout class="QGridLayout" name="gridLayout_9">
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="groupBox_15">
+          <property name="title">
+           <string>北醫大圖書館SD CO2  &amp; 根基營造 JNC Server CB</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_13">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QLabel" name="label_16">
+               <property name="text">
+                <string>per</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="library_monitor_per_sec"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_15">
+               <property name="text">
+                <string>sec , monitor sd co2 value.</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btn_library_sd_start">
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="text">
+                <string>start</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>../icon/icons8-edit-64.png</normaloff>../icon/icons8-edit-64.png</iconset>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btn_library_sd_stop">
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="text">
+                <string>stop</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>../icon/icons8-close-window-94.png</normaloff>../icon/icons8-close-window-94.png</iconset>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QTreeWidget" name="library_sd_list">
+             <column>
+              <property name="text">
+               <string notr="true">1</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QGroupBox" name="groupBox_16">
+          <property name="title">
+           <string>根基營造 JNC Server CB</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_10">
+           <item row="0" column="0">
+            <widget class="QTreeWidget" name="kedge_cb_list_1">
+             <column>
+              <property name="text">
+               <string notr="true">1</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QTreeWidget" name="kedge_cb_list_8">
+             <column>
+              <property name="text">
+               <string notr="true">1</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+           <item row="3" column="2">
+            <widget class="QTreeWidget" name="kedge_cb_list_12">
+             <column>
+              <property name="text">
+               <string notr="true">1</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QTreeWidget" name="kedge_cb_list_6">
+             <column>
+              <property name="text">
+               <string notr="true">1</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QTreeWidget" name="kedge_cb_list_9">
+             <column>
+              <property name="text">
+               <string notr="true">1</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QTreeWidget" name="kedge_cb_list_7">
+             <column>
+              <property name="text">
+               <string notr="true">1</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QTreeWidget" name="kedge_cb_list_10">
+             <column>
+              <property name="text">
+               <string notr="true">1</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QTreeWidget" name="kedge_cb_list_11">
+             <column>
+              <property name="text">
+               <string notr="true">1</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QTreeWidget" name="kedge_cb_list_2">
+             <column>
+              <property name="text">
+               <string notr="true">1</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QTreeWidget" name="kedge_cb_list_5">
+             <column>
+              <property name="text">
+               <string notr="true">1</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QTreeWidget" name="kedge_cb_list_4">
+             <column>
+              <property name="text">
+               <string notr="true">1</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QTreeWidget" name="kedge_cb_list_3">
+             <column>
+              <property name="text">
+               <string notr="true">1</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QTreeWidget" name="kedge_cb_list_13">
+             <column>
+              <property name="text">
+               <string notr="true">1</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QTreeWidget" name="kedge_cb_list_14">
+             <column>
+              <property name="text">
+               <string notr="true">1</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_jnc_cb">
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="2" column="1">
+         <widget class="QGroupBox" name="groupBox_4">
+          <property name="title">
+           <string>autoGUI record</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <property name="leftMargin">
+            <number>1</number>
+           </property>
+           <property name="topMargin">
+            <number>1</number>
+           </property>
+           <property name="rightMargin">
+            <number>1</number>
+           </property>
+           <property name="bottomMargin">
+            <number>1</number>
+           </property>
+           <item>
+            <widget class="QTreeWidget" name="autogui_record">
+             <column>
+              <property name="text">
+               <string notr="true">1</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>modbusTCP - realtime</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <property name="leftMargin">
+            <number>1</number>
+           </property>
+           <property name="topMargin">
+            <number>1</number>
+           </property>
+           <property name="rightMargin">
+            <number>1</number>
+           </property>
+           <property name="bottomMargin">
+            <number>1</number>
+           </property>
+           <item>
+            <widget class="QTreeWidget" name="cb_tcp_realtime_list">
+             <column>
+              <property name="text">
+               <string notr="true">1</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QGroupBox" name="groupBox_5">
+          <property name="title">
+           <string>modbusTCP -realtime</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <property name="leftMargin">
+            <number>1</number>
+           </property>
+           <property name="topMargin">
+            <number>1</number>
+           </property>
+           <property name="rightMargin">
+            <number>1</number>
+           </property>
+           <property name="bottomMargin">
+            <number>1</number>
+           </property>
+           <item row="1" column="2">
+            <widget class="QLabel" name="label_5">
+             <property name="text">
+              <string>address 2</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>PORT</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>IP</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>address 1</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="m_i_1">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="text">
+              <string>0x0000</string>
+             </property>
+             <property name="placeholderText">
+              <string>item 1</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QLineEdit" name="m_port">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="text">
+              <string>502</string>
+             </property>
+             <property name="placeholderText">
+              <string>Port</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="3">
+            <widget class="QPushButton" name="btn_m_stop">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="text">
+              <string>Stop</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="3">
+            <widget class="QLineEdit" name="m_i_5">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="text">
+              <string>0x0004</string>
+             </property>
+             <property name="placeholderText">
+              <string>item 5</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QPushButton" name="btn_m_start">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="text">
+              <string>Start</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="5">
+            <widget class="QLineEdit" name="m_i_3">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="text">
+              <string>0x0002</string>
+             </property>
+             <property name="placeholderText">
+              <string>item 3</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QLineEdit" name="m_i_2">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="text">
+              <string>0x0001</string>
+             </property>
+             <property name="placeholderText">
+              <string>item 2</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="m_ip">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="text">
+              <string>61.220.205.144</string>
+             </property>
+             <property name="placeholderText">
+              <string>IP</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="m_i_4">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="text">
+              <string>0x0003</string>
+             </property>
+             <property name="placeholderText">
+              <string>item 4</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="4">
+            <widget class="QLabel" name="label_6">
+             <property name="text">
+              <string>address 3</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_7">
+             <property name="text">
+              <string>address 4</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QLabel" name="label_8">
+             <property name="text">
+              <string>address 5</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="title">
+           <string>autoGui</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_4">
+           <property name="leftMargin">
+            <number>1</number>
+           </property>
+           <property name="topMargin">
+            <number>1</number>
+           </property>
+           <property name="rightMargin">
+            <number>1</number>
+           </property>
+           <property name="bottomMargin">
+            <number>1</number>
+           </property>
+           <item row="3" column="2">
+            <widget class="QPushButton" name="btn_mouse_msg">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="text">
+              <string>mouse msg</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QPushButton" name="btn_auto_click">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="text">
+              <string>Auto click</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="autogui_msg">
+             <property name="text">
+              <string>position</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="autogui_size">
+             <property name="text">
+              <string>size</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QPushButton" name="btn_stop_click">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="text">
+              <string>Stop auto</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_lds_i6">
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="2" column="0">
+         <widget class="QGroupBox" name="groupBox_12">
+          <property name="title">
+           <string>維新iAeris52</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_10">
+           <property name="leftMargin">
+            <number>1</number>
+           </property>
+           <property name="topMargin">
+            <number>1</number>
+           </property>
+           <property name="rightMargin">
+            <number>1</number>
+           </property>
+           <property name="bottomMargin">
+            <number>1</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="btn_iaeris52_start">
+             <property name="text">
+              <string>Get value</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../icon/icons8-arrow-30.png</normaloff>../icon/icons8-arrow-30.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btn_iaeris52_timer_start">
+             <property name="text">
+              <string>Timer(60 sec)</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../icon/icons8-download-64 (1).png</normaloff>../icon/icons8-download-64 (1).png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btn_iaeris52_timer_stop">
+             <property name="text">
+              <string>Stop Timer</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../icon/icons8-high-priority-48.png</normaloff>../icon/icons8-high-priority-48.png</iconset>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="groupBox_6">
+          <property name="title">
+           <string>連大興 realtime</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <property name="leftMargin">
+            <number>1</number>
+           </property>
+           <property name="topMargin">
+            <number>1</number>
+           </property>
+           <property name="rightMargin">
+            <number>1</number>
+           </property>
+           <property name="bottomMargin">
+            <number>1</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="btn_lds_i6_start">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="text">
+              <string>Get Value</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../icon/icons8-edit-file-48.png</normaloff>../icon/icons8-edit-file-48.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btn_lds_i6_timer_start">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="text">
+              <string>Timer(60 sec)</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../icon/icons8-search-64 (1).png</normaloff>../icon/icons8-search-64 (1).png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btn_lds_i6_timer_stop">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="text">
+              <string>Stop Timer</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../icon/icons8-close-window-94.png</normaloff>../icon/icons8-close-window-94.png</iconset>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QGroupBox" name="groupBox_8">
+          <property name="title">
+           <string>富泰 realtime</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <property name="leftMargin">
+            <number>1</number>
+           </property>
+           <property name="topMargin">
+            <number>1</number>
+           </property>
+           <property name="rightMargin">
+            <number>1</number>
+           </property>
+           <property name="bottomMargin">
+            <number>1</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="btn_ft_i6_start">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="text">
+              <string>Get value</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../icon/icons8-edit-64 (1).png</normaloff>../icon/icons8-edit-64 (1).png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btn_ft_i6_timer_start">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="text">
+              <string>Timer(60 sec)</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../icon/icons8-new-copy-48.png</normaloff>../icon/icons8-new-copy-48.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btn_ft_i6_timer_stop">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="text">
+              <string>Stop Timer</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../icon/icons8-close-window-94.png</normaloff>../icon/icons8-close-window-94.png</iconset>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="title">
+           <string>連大興 - I6</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <property name="leftMargin">
+            <number>1</number>
+           </property>
+           <property name="topMargin">
+            <number>1</number>
+           </property>
+           <property name="rightMargin">
+            <number>1</number>
+           </property>
+           <property name="bottomMargin">
+            <number>1</number>
+           </property>
+           <item>
+            <widget class="QTreeWidget" name="lds_i6_list">
+             <property name="cursor" stdset="0">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <column>
+              <property name="text">
+               <string notr="true">1</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QGroupBox" name="groupBox_7">
+          <property name="title">
+           <string>富泰 - I6</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <property name="leftMargin">
+            <number>1</number>
+           </property>
+           <property name="topMargin">
+            <number>1</number>
+           </property>
+           <property name="rightMargin">
+            <number>1</number>
+           </property>
+           <property name="bottomMargin">
+            <number>1</number>
+           </property>
+           <item>
+            <widget class="QTreeWidget" name="ft_i6_list">
+             <column>
+              <property name="text">
+               <string notr="true">1</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QGroupBox" name="groupBox_11">
+          <property name="title">
+           <string>維新 iAeris52</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <property name="leftMargin">
+            <number>1</number>
+           </property>
+           <property name="topMargin">
+            <number>1</number>
+           </property>
+           <property name="rightMargin">
+            <number>1</number>
+           </property>
+           <property name="bottomMargin">
+            <number>1</number>
+           </property>
+           <item>
+            <widget class="QTreeWidget" name="iaeris52_list">
+             <column>
+              <property name="text">
+               <string notr="true">1</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_13">
+             <property name="text">
+              <string>即時讀取進度</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QProgressBar" name="realtime_progressbar">
+             <property name="value">
+              <number>24</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_socket">
+       <layout class="QGridLayout" name="gridLayout_6">
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="groupBox_9">
+          <property name="title">
+           <string>Socket - server</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_8">
+           <property name="leftMargin">
+            <number>1</number>
+           </property>
+           <property name="topMargin">
+            <number>1</number>
+           </property>
+           <property name="rightMargin">
+            <number>1</number>
+           </property>
+           <property name="bottomMargin">
+            <number>1</number>
+           </property>
+           <item row="1" column="0">
+            <widget class="QTreeWidget" name="socket_server_list">
+             <column>
+              <property name="text">
+               <string notr="true">1</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QPushButton" name="btn_start_socket_server">
+             <property name="text">
+              <string>start socket server</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QGroupBox" name="groupBox_10">
+          <property name="title">
+           <string>Socket - client</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <property name="leftMargin">
+            <number>1</number>
+           </property>
+           <property name="topMargin">
+            <number>1</number>
+           </property>
+           <property name="rightMargin">
+            <number>1</number>
+           </property>
+           <property name="bottomMargin">
+            <number>1</number>
+           </property>
+           <item>
+            <widget class="QLineEdit" name="socket_client_msg">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btn_socket_client_send">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="text">
+              <string>send</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTreeWidget" name="socket_client_list">
+             <column>
+              <property name="text">
+               <string notr="true">1</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_ddos">
+       <layout class="QGridLayout" name="gridLayout_7">
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="groupBox_13">
+          <property name="title">
+           <string>DDos </string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_11">
+           <property name="leftMargin">
+            <number>1</number>
+           </property>
+           <property name="topMargin">
+            <number>1</number>
+           </property>
+           <property name="rightMargin">
+            <number>1</number>
+           </property>
+           <property name="bottomMargin">
+            <number>1</number>
+           </property>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QLineEdit" name="ddos_anysisistics_edit">
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btn_ddos_analysis_submit">
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="text">
+                <string>解析</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>../../scraping/icon/icons8-automatic-40.png</normaloff>../../scraping/icon/icons8-automatic-40.png</iconset>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_9">
+             <property name="text">
+              <string>新增 DDos</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTreeWidget" name="ddos_attack_ip_list">
+             <column>
+              <property name="text">
+               <string notr="true">1</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_12">
+             <property name="text">
+              <string>DDos 攻擊IP詳細統計</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTreeWidget" name="ddos_attack_ip_detail_list">
+             <column>
+              <property name="text">
+               <string notr="true">1</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QGroupBox" name="groupBox_14">
+          <property name="title">
+           <string>DDos 統計</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_12">
+           <item>
+            <widget class="QPushButton" name="btn_reload_ddos_list">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="text">
+              <string>Reload DDos list</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../../scraping/icon/icons8-search-64 (1).png</normaloff>../../scraping/icon/icons8-search-64 (1).png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_10">
+             <property name="text">
+              <string>DDos 總統計</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTreeWidget" name="ddos_statistics_list">
+             <column>
+              <property name="text">
+               <string notr="true">1</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_11">
+             <property name="text">
+              <string>DDos 攻擊IP次數統計</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTreeWidget" name="ddos_attack_ip_statistics_list">
+             <column>
+              <property name="text">
+               <string notr="true">1</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QLabel" name="label_14">
+               <property name="text">
+                <string>DDos 總攻擊次數</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="ddos_total_attack_amount">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>JNC</string>
+    </property>
+    <addaction name="action_jnc_cb"/>
+    <addaction name="action_library_sd"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>連大興 , 富泰</string>
+    </property>
+    <addaction name="action_lds_I6"/>
+    <addaction name="action_Socket"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>網路資安</string>
+    </property>
+    <addaction name="action_DDos"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>測試</string>
+    </property>
+    <addaction name="actionQTreeWidgets"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+  </widget>
+  <action name="action_jnc_cb">
+   <property name="icon">
+    <iconset>
+     <normaloff>../icon/icons8-signing-a-document-48.png</normaloff>../icon/icons8-signing-a-document-48.png</iconset>
+   </property>
+   <property name="text">
+    <string>CB</string>
+   </property>
+  </action>
+  <action name="action_lds_I6">
+   <property name="icon">
+    <iconset>
+     <normaloff>../icon/icons8-edit-64 (1).png</normaloff>../icon/icons8-edit-64 (1).png</iconset>
+   </property>
+   <property name="text">
+    <string>I6</string>
+   </property>
+   <property name="toolTip">
+    <string>lds_I6</string>
+   </property>
+  </action>
+  <action name="action_Socket">
+   <property name="icon">
+    <iconset>
+     <normaloff>../icon/icons8-load-balancer-48.png</normaloff>../icon/icons8-load-balancer-48.png</iconset>
+   </property>
+   <property name="text">
+    <string>Socket</string>
+   </property>
+  </action>
+  <action name="action_DDos">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../scraping/icon/icons8-load-balancer-48.png</normaloff>../../scraping/icon/icons8-load-balancer-48.png</iconset>
+   </property>
+   <property name="text">
+    <string>DDos</string>
+   </property>
+  </action>
+  <action name="action_library_sd">
+   <property name="icon">
+    <iconset>
+     <normaloff>../icon/icons8-accounting-64.png</normaloff>../icon/icons8-accounting-64.png</iconset>
+   </property>
+   <property name="text">
+    <string>北醫大圖書館SD,根基營造</string>
+   </property>
+   <property name="toolTip">
+    <string>北醫大圖書館SD</string>
+   </property>
+  </action>
+  <action name="actionQTreeWidgets">
+   <property name="icon">
+    <iconset>
+     <normaloff>../icon/bullet-list.png</normaloff>../icon/bullet-list.png</iconset>
+   </property>
+   <property name="text">
+    <string>QTreeWidgets</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
